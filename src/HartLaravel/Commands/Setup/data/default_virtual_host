@@ -1,0 +1,18 @@
+
+# Auto generated for project %project_name%  on %datetime%
+<VirtualHost *:80>
+  DocumentRoot "%working_directory%/public"
+  DirectoryIndex index.php
+  ServerName %default_domain%
+
+  <Directory "%working_directory%/public/">
+    AllowOverride All
+    Allow from All
+  </Directory>
+  ErrorLog "%working_directory%/app/storage/logs/%project_name%.err"
+  CustomLog "%working_directory%/app/storage/logs/%project_name%.log" combined
+  RewriteLog "%working_directory%/app/storage/logs/%project_name%-rewrite.err"
+  RewriteLogLevel 0
+
+
+</VirtualHost>

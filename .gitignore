@@ -1,0 +1,15 @@
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.DS_Store
+.DS_Store
+Thumbs.db
+.sass-cache
+*.swp
+
+# phpstorm
+.idea
+
+tests/_output/*
+vendor

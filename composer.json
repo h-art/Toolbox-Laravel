@@ -1,0 +1,36 @@
+{
+	"name": "hart/toolbox-laravel",
+	"description": "A beautiful toolbox for laravel.",
+	"keywords": ["hart", "toolbox-laravel"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4"			
+	},
+	"require-dev": {
+		"codeception/codeception": "2.0.2",
+		"codeception/specify": "0.3.6",
+		"codeception/verify": "0.2.7",
+		"mockery/mockery": "0.9.1"
+	},
+	"autoload": {
+		"classmap": [
+			
+		],
+		"psr-4": {
+			"HartLaravel\\": "src/HartLaravel",
+			"Mocks\\": "tests/Mocks"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			
+		],
+		"post-update-cmd": [
+			"php vendor/bin/codecept run"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}
